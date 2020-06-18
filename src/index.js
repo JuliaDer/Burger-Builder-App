@@ -14,3 +14,7 @@ const app = (
 
 ReactDOM.render(app, document.getElementById('root'));
 registerServiceWorker();
+
+if (module.hot) {
+  module.hot.accept();
+}
